@@ -1,0 +1,181 @@
+.header-1{
+    height: 50px;
+    background-image: url('../images/header6_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    font-weight: 500;
+}
+.font-header{ font-size: small;}
+.slick-slide {
+    text-align: center;
+    color: #000;
+    background: #fff;
+}
+.top-1{
+    top: 8px;
+}
+.bg-content-1{
+    background-image: url('../images/h8_img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slick-slide{
+    background-color: #e4e4e4;;
+}
+.overflow-text-1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    max-height: calc(1.4em * 4);
+}
+.overflow-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    max-height: calc(1.4em * 2);
+}
+.font-card{
+    font-size: medium;
+}
+.bg-light{
+    background-color: #e9e9e9!important;
+}
+.btn-light{
+    background-color: #e4e4e4!important;
+}
+.card-hover{
+    position: relative;
+    display: none;
+}
+.card-hv-2{
+    display: none;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 1000;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.view{
+    position: absolute;
+    top: -360px;
+    right: 23px;
+}
+.card:hover .card-hover{
+    display: block;
+    opacity: 1; 
+}
+.card:hover .card-hv-2{
+    display: block;
+}
+
+.my-button {
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    height: 32px;
+    background-color: #ccc;
+    color: #000;
+    transition: width 0.5s ease;
+  }
+  
+  .my-button:hover {
+    width: 150px;
+    order: 2;
+  }
+  .carousel-item{
+    /* transition: none; */
+    width: 100%;
+    height: 400px;
+  }
+  .carousel-indicators [data-bs-target]{
+    width: 10px;
+  }
+  li.active{
+    height: 10px!important;
+    background-color: palevioletred !important;
+    border-radius: 50%;
+    margin-top: -4px!important;
+  }
+
+  .horizone {
+    background-image: url('http://picsum.photos/300/400');
+    background-size: cover;
+    transition: background-position 0.3s ease-in-out;
+  }
+  
+  .horizone:hover {
+    background-position: -20px 0;
+  }
+  .vertical{
+    background-image: url('http://picsum.photos/300/400');
+    background-size: cover;
+    transition: background-position 0.3s ease-in-out;
+  }
+  
+  .vertical:hover {
+    background-position: 0 -10px;
+  }
+  .form-select:focus{
+    box-shadow: none!important;
+  }
+  .btn-hover:hover button{
+    background-color:crimson !important;
+    border: 1px solid crimson;
+    color: #fff;
+  }
+  #dropdown-login .dropdown-toggle::after {
+    content: none;
+  }
+  .form-check-input:checked{
+    background-color: cadetblue;
+    border-color: cadetblue;
+
+  }
+  .form-range::-webkit-slider-thumb{
+    width:1rem;height:1rem;margin-top:-.25rem;
+    background-color:cadetblue;
+.form-range::-moz-range-thumb{width:1rem;height:1rem;
+    background-color:cadetblue;
+}}
+.form-check-input:checked[type=radio]{
+    background-image: url('../images/svg/star.svg');
+}
+.rating {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    color: #ddd;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .rating label:before {
+    content: "\2605";
+  }
+  
+  .rating input:checked ~ label {
+    color: cadetblue;
+  }
+  .card-order{
+    flex-direction: row;
+  }
+  .amount{
+    width: 30px;
+    text-align: center;
+    border: none;
+    font-size:larger;
+  }
+  .amount:focus{
+    outline: none;
+  }
