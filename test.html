@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fade In Right and Revert</title>
+  <!-- Đường dẫn tới tệp CSS của Animate.css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        .animate-3{
+            margin-left: 100%;
+        }
+        div.div1{
+            overflow: hidden;
+            height: 400px;
+            width: 100%;
+            border: 1px solid green;
+        }
+        .a1 {
+            opacity: 1;
+            transform: translateX(100px);
+            transition: 0.7s;
+        }
+        .a2 {
+            opacity: 1;
+            transform: translateX(100px);
+            transition: 0.5s;
+        }
+        .a4 {
+            opacity: 1;
+            transform: translateX(100px);
+            transition: 0.7s;
+        }
+        .a5 {
+            opacity: 1;
+            transform: translateX(100px);
+            transition: 1s;
+        }
+        .a3 {
+            opacity: 1;
+            margin-left: 80%;
+            transition: 0.8s;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <button id="#click" >
+        button
+    </button>
+    <div class="div1 pt-5">
+        <div class="btn btn-sm btn-light animate-1" id="a1">vico x6seri</div>
+        <div  class="animate-2 display-6 mt-3 w-50">redefine your world with 150mp camera</div>
+        <div class="animate-3">image</div>
+        <div class="animate-4 ">Up to 30% off</div>
+        <button class="animate-5 btn btn-light mt-3">Order Now</div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(()=>{
+        $('button').click( function() {
+
+            $('.animate-2').removeClass('a2');
+            $('.animate-3').removeClass('a3');
+            $('.animate-4').removeClass('a1');
+            $('.animate-5').removeClass('a5');
+            $('.animate-1').removeClass('a1');
+                        //
+            $('.animate-1').addClass('a1');
+            setTimeout(function () {
+                $('.animate-2').addClass('a2');
+            },600)
+            setTimeout(function () {
+                $('.animate-3').addClass('a3');
+            },1000)
+            setTimeout(function () {
+                $('.animate-4').addClass('a1');
+            },1200)
+            setTimeout(function () {
+                $('.animate-5').addClass('a5');
+            },1200)
+         });
+    })
+  </script>
+</body>
+</html>
