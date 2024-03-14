@@ -26,7 +26,7 @@ const auth = getAuth()
 const email = document.getElementById('email').value;
 const password = document.getElementById('password').value;
 
-const submit = document.getElementById('login');
+const submit = document.getElementById('submit');
 submit.addEventListener("click", function (event) {
     e.preventDefault();
 
