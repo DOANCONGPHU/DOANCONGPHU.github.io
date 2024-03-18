@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/0274d45322.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -24,8 +24,7 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
         })();
-        </script>
-        <!--End of Tawk.to Script-->
+        </script> -->
 </head>
 
 <body>
@@ -39,7 +38,6 @@
           <p>Some text lorem ipsum.</p>
           <p>Some text lorem ipsum.</p>
           <p>Some text lorem ipsum.</p>
-          <button class="btn btn-secondary" type="button">A Button</button>
         </div>
         <div class="footer w-100  ps-2 pe-2 border-top pt-3">
             <div class="display-6 d-flex justify-content-between fs-3 pb-4">
@@ -47,7 +45,14 @@
                 <span class="text-danger fs-4 mt-1">$788.31</span>
             </div>
             <button type="button" class="btn btn-light w-100  mb-2">View card</button>
-            <button type="button" class="btn btn-danger w-100  mb-2">Check out</button>
+            <button type="button" class="btn btn-danger w-100 mb-2" id="checkoutBtn">Check out</button>
+
+            <script>
+            document.getElementById("checkoutBtn").addEventListener("click", function() {
+                // Mở trang contact.html trong một cửa sổ mới
+                window.open("contact.html", "_blank");
+            });
+            </script>
         </div>
     </div>
     <div class="header-1 text-white d-flex justify-content-center align-items-center">
